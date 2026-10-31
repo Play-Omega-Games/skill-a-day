@@ -1,0 +1,2656 @@
+{
+ "meta": {
+  "name": "Skill a Day: curricula",
+  "version": 1,
+  "session_minutes": {
+   "warmup": 3,
+   "practice": 10,
+   "wrapup": 2
+  },
+  "stages_per_skill": 6,
+  "drills_per_stage": 6,
+  "levels": {
+   "Foundations": [
+    1,
+    2,
+    3
+   ],
+   "Building": [
+    4,
+    5,
+    6
+   ]
+  },
+  "license": "CC0 1.0"
+ },
+ "menu": [
+  "typing",
+  "drawing",
+  "chess",
+  "spreadsheets",
+  "speaking",
+  "mentalmath",
+  "knots",
+  "juggling"
+ ],
+ "skills": [
+  {
+   "id": "typing",
+   "name": "Touch typing",
+   "emoji": "⌨️",
+   "blurb": "Type without looking at the keys, faster and with fewer mistakes.",
+   "need": "A computer keyboard. Type your drills right here in chat.",
+   "safety": "Sit tall, keep your wrists relaxed and level, and stop if anything aches.",
+   "generator": "typing",
+   "measure": {
+    "name": "Words per minute and accuracy",
+    "unit": "wpm"
+   },
+   "warmups": [
+    "Rest your fingers on the home keys (left hand on A S D F, right hand on J K L ;). Feel the small bumps on F and J. Lift your hands away and find the bumps again with your eyes closed, 10 times.",
+    "Without typing, tap each finger on its home key in turn, left little finger to right little finger and back, slowly, 5 rounds.",
+    "Shake out your hands, roll your shoulders, then type the alphabet once slowly without looking down.",
+    "Type your first name and the word 'ready' 5 times, eyes on the screen, not the keys."
+   ],
+   "wrapup": "Note your accuracy and which keys made you look down. Tomorrow, start with those keys.",
+   "resources": [
+    {
+     "label": "How touch typing works",
+     "url": "https://en.wikipedia.org/wiki/Touch_typing"
+    }
+   ],
+   "stages": [
+    {
+     "title": "Home row",
+     "goal": "Type the home row keys without looking.",
+     "gen": {
+      "letters": "asdfghjkl"
+     },
+     "drills": [
+      {
+       "title": "Meet the home row",
+       "do": "Type each line of today's drill twice. Say each letter in your head as you press it. Accuracy matters more than speed today.",
+       "drill": 1
+      },
+      {
+       "title": "Index finger stretch",
+       "do": "Your index fingers also cover G and H. Type today's lines, reaching sideways for G and H and coming straight back home.",
+       "drill": 2
+      },
+      {
+       "title": "Little fingers",
+       "do": "Type today's lines, paying attention to A and L, the little-finger keys. Keep the other fingers resting lightly on home.",
+       "drill": 3
+      },
+      {
+       "title": "Steady rhythm",
+       "do": "Type today's lines at an even beat, like a slow metronome. Same gap between every key, even the easy ones.",
+       "drill": 4
+      },
+      {
+       "title": "Eyes up",
+       "do": "Cover your hands with a cloth or a sheet of paper. Type today's lines without peeking.",
+       "drill": 5
+      },
+      {
+       "title": "Word flow",
+       "do": "Type today's lines as whole words, not single letters. Pause only at the spaces.",
+       "drill": 6
+      }
+     ],
+     "easier": "Type each line once, very slowly, and look at a key chart on screen instead of your hands.",
+     "harder": "Type each line three times and aim for no mistakes on the third try.",
+     "check": {
+      "task": "Set a 1-minute timer and type the check passage as far as you get. Paste what you typed in chat with the time you took.",
+      "record": "words per minute and accuracy, worked out by your bot",
+      "ready_if": "Accuracy of 90% or better without looking down."
+     },
+     "stage": 1,
+     "level": "Foundations"
+    },
+    {
+     "title": "Top row reach, part 1",
+     "goal": "Add E, I, R and U to the home row.",
+     "gen": {
+      "letters": "asdfghjkleiru"
+     },
+     "drills": [
+      {
+       "title": "E and I",
+       "do": "E is your left middle finger reaching up; I is your right middle finger reaching up. Type today's lines and return each finger home after the reach.",
+       "drill": 1
+      },
+      {
+       "title": "R and U",
+       "do": "R and U are the index fingers reaching up. Type today's lines, keeping your wrists still.",
+       "drill": 2
+      },
+      {
+       "title": "Mixed reaches",
+       "do": "Type today's lines. When you miss a key, retype the whole word, not just the letter.",
+       "drill": 3
+      },
+      {
+       "title": "Even beat",
+       "do": "Type today's lines at a steady beat, slow enough that you make no more than one mistake per line.",
+       "drill": 4
+      },
+      {
+       "title": "Eyes up",
+       "do": "Cover your hands and type today's lines. Look only at the screen.",
+       "drill": 5
+      },
+      {
+       "title": "Speed burst",
+       "do": "Type each of today's lines once slowly, then once a little faster. Notice where the faster try slips.",
+       "drill": 6
+      }
+     ],
+     "easier": "Practice just E and I today, and leave R and U for tomorrow.",
+     "harder": "Type each line with your eyes closed, then check it.",
+     "check": {
+      "task": "1-minute timed test on the check passage. Paste your text and your time.",
+      "record": "words per minute and accuracy",
+      "ready_if": "90% accuracy without looking."
+     },
+     "stage": 2,
+     "level": "Foundations"
+    },
+    {
+     "title": "Top row reach, part 2",
+     "goal": "Add T, Y, O, P, W and Q.",
+     "gen": {
+      "letters": "asdfghjkleiruptyowq"
+     },
+     "drills": [
+      {
+       "title": "T and Y",
+       "do": "T is a long reach up and to the right for the left index finger; Y is up and to the left for the right index finger. Type today's lines.",
+       "drill": 1
+      },
+      {
+       "title": "O and P",
+       "do": "O is the right ring finger reaching up; P is the right little finger. Type today's lines.",
+       "drill": 2
+      },
+      {
+       "title": "W and Q",
+       "do": "W is the left ring finger; Q is the left little finger. Type today's lines and keep the other fingers anchored.",
+       "drill": 3
+      },
+      {
+       "title": "Whole top row",
+       "do": "Type today's lines. Then type q w e r t y u i o p three times without looking.",
+       "drill": 4
+      },
+      {
+       "title": "Eyes up",
+       "do": "Cover your hands and type today's lines.",
+       "drill": 5
+      },
+      {
+       "title": "Rhythm over speed",
+       "do": "Type today's lines at the fastest speed where you still make almost no mistakes.",
+       "drill": 6
+      }
+     ],
+     "easier": "Split the stage: T and Y today, the other four keys later this week.",
+     "harder": "Add a 1-minute speed burst at the end with the check passage.",
+     "check": {
+      "task": "1-minute timed test on the check passage. Paste your text and your time.",
+      "record": "words per minute and accuracy",
+      "ready_if": "90% accuracy and at least 15 words per minute."
+     },
+     "stage": 3,
+     "level": "Foundations"
+    },
+    {
+     "title": "Bottom row",
+     "goal": "Add C, V, B, N, M, X and Z for the full alphabet.",
+     "gen": {
+      "letters": "abcdefghijklmnopqrstuvwxyz"
+     },
+     "drills": [
+      {
+       "title": "V, B, N and M",
+       "do": "The index fingers reach down: left for V and B, right for N and M. Type today's lines.",
+       "drill": 1
+      },
+      {
+       "title": "C, X and Z",
+       "do": "C is the left middle finger, X the ring finger, Z the little finger, all reaching down. Type today's lines.",
+       "drill": 2
+      },
+      {
+       "title": "Full alphabet",
+       "do": "Type today's lines. Then type the alphabet three times without looking.",
+       "drill": 3
+      },
+      {
+       "title": "Tricky pairs",
+       "do": "Type today's lines, then pick the two letters you miss most and type 5 words with them.",
+       "drill": 4
+      },
+      {
+       "title": "Eyes up",
+       "do": "Cover your hands and type today's lines.",
+       "drill": 5
+      },
+      {
+       "title": "Longer run",
+       "do": "Type all of today's lines without stopping to fix mistakes. Then count your mistakes.",
+       "drill": 6
+      }
+     ],
+     "easier": "Practice only V, B, N and M today.",
+     "harder": "Type today's lines twice, the second time faster.",
+     "check": {
+      "task": "1-minute timed test on the check passage. Paste your text and your time.",
+      "record": "words per minute and accuracy",
+      "ready_if": "92% accuracy and at least 20 words per minute."
+     },
+     "stage": 4,
+     "level": "Building"
+    },
+    {
+     "title": "Capitals, punctuation and numbers",
+     "goal": "Use Shift, common punctuation and the number row.",
+     "gen": {
+      "letters": "abcdefghijklmnopqrstuvwxyz",
+      "caps": true,
+      "punct": true,
+      "numbers": true
+     },
+     "drills": [
+      {
+       "title": "Shift keys",
+       "do": "For a capital, hold Shift with the little finger of the opposite hand. Type today's lines.",
+       "drill": 1
+      },
+      {
+       "title": "Period and comma",
+       "do": "Comma is the right middle finger reaching down; period is the right ring finger. Type today's lines.",
+       "drill": 2
+      },
+      {
+       "title": "Question marks and apostrophes",
+       "do": "Type today's lines. The apostrophe and the question mark are both right little-finger keys.",
+       "drill": 3
+      },
+      {
+       "title": "Number row",
+       "do": "Type today's lines with numbers. Reach up from the home row and come back each time.",
+       "drill": 4
+      },
+      {
+       "title": "Eyes up",
+       "do": "Cover your hands and type today's lines.",
+       "drill": 5
+      },
+      {
+       "title": "Mixed sentences",
+       "do": "Type today's lines at a steady pace and fix nothing until the end.",
+       "drill": 6
+      }
+     ],
+     "easier": "Skip the numbers this week and focus on capitals and periods.",
+     "harder": "Type each line, then retype it from memory.",
+     "check": {
+      "task": "1-minute timed test on the check passage. Paste your text and your time.",
+      "record": "words per minute and accuracy",
+      "ready_if": "92% accuracy and at least 22 words per minute."
+     },
+     "stage": 5,
+     "level": "Building"
+    },
+    {
+     "title": "Speed and flow",
+     "goal": "Build speed on real sentences while keeping accuracy.",
+     "gen": {
+      "letters": "abcdefghijklmnopqrstuvwxyz",
+      "caps": true,
+      "punct": true
+     },
+     "drills": [
+      {
+       "title": "Accuracy first",
+       "do": "Type today's lines with no mistakes at all. Slow down until that is easy.",
+       "drill": 1
+      },
+      {
+       "title": "Speed bursts",
+       "do": "Type each line as fast as you can, then once at a comfortable pace. Compare the two.",
+       "drill": 2
+      },
+      {
+       "title": "Copy from paper",
+       "do": "Copy a paragraph from any book or letter near you, eyes on the page, never on the keys.",
+       "drill": 3
+      },
+      {
+       "title": "Write your own",
+       "do": "Type a short paragraph about your day without looking at the keys. Thinking and typing at once is the real skill.",
+       "drill": 4
+      },
+      {
+       "title": "Weak keys",
+       "do": "Type today's lines, then 10 words that use your two weakest keys.",
+       "drill": 5
+      },
+      {
+       "title": "Long run",
+       "do": "Type all of today's lines in one go, as a single 5-minute run.",
+       "drill": 6
+      }
+     ],
+     "easier": "Repeat the accuracy drill and skip the speed bursts.",
+     "harder": "Do two 1-minute tests and keep your best.",
+     "check": {
+      "task": "1-minute timed test on the check passage. Paste your text and your time.",
+      "record": "words per minute and accuracy",
+      "ready_if": "95% accuracy. Speed is your own target from here."
+     },
+     "stage": 6,
+     "level": "Building"
+    }
+   ],
+   "source": "omega"
+  },
+  {
+   "id": "drawing",
+   "name": "Drawing basics",
+   "emoji": "✏️",
+   "blurb": "Learn to see and draw lines, shapes, shading and simple scenes.",
+   "need": "A pencil (an ordinary one is fine), an eraser and plain paper.",
+   "safety": null,
+   "generator": null,
+   "measure": {
+    "name": "Your before-and-after drawings",
+    "unit": "sketch"
+   },
+   "warmups": [
+    "Fill a quarter page with straight lines, drawing from your shoulder, not your wrist. Go slowly, then a little faster.",
+    "Draw 20 circles and 20 ovals of different sizes. Go around each one twice lightly before you commit.",
+    "Draw 10 straight lines between pairs of dots you place yourself. Aim to hit each dot.",
+    "Shade a small box from light to dark in one smooth sweep, three times."
+   ],
+   "wrapup": "Write the date on today's page. Snap a photo if you like, so you can compare later.",
+   "resources": [
+    {
+     "label": "The Practice and Science of Drawing (full book, free)",
+     "url": "https://www.gutenberg.org/ebooks/14264"
+    },
+    {
+     "label": "Contour drawing",
+     "url": "https://en.wikipedia.org/wiki/Contour_drawing"
+    }
+   ],
+   "stages": [
+    {
+     "title": "Lines and seeing",
+     "goal": "Control your pencil and draw what you see, not what you think you see.",
+     "drills": [
+      {
+       "title": "Before drawing",
+       "do": "Draw your own hand, or a mug, for 10 minutes. Keep it. You will draw it again at the end of the plan.",
+       "drill": 1
+      },
+      {
+       "title": "Blind contour",
+       "do": "Look only at your hand and draw its outline slowly without looking at the paper. It will look odd; that is the point.",
+       "link": "https://en.wikipedia.org/wiki/Contour_drawing",
+       "drill": 2
+      },
+      {
+       "title": "Contour",
+       "do": "Draw a shoe or a cup with one slow continuous line, glancing at the paper only now and then.",
+       "drill": 3
+      },
+      {
+       "title": "Straight and curved",
+       "do": "Draw a still life of three simple objects using only straight lines, then again using only curves.",
+       "drill": 4
+      },
+      {
+       "title": "Upside down",
+       "do": "Turn a photo upside down and copy it. You will draw shapes and angles instead of labels.",
+       "drill": 5
+      },
+      {
+       "title": "Slow line",
+       "do": "Pick one object and draw its edge as slowly as you can, matching your eye to your pencil.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use bigger paper and draw only one object per session.",
+     "harder": "Add the inside edges too: folds, seams and the borders of shadows.",
+     "check": {
+      "task": "Draw a mug from life for 8 minutes.",
+      "record": "a photo or a note on what got easier",
+      "ready_if": "You looked at the mug more than at the paper."
+     },
+     "stage": 1,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Shapes and proportion",
+     "goal": "Build objects from simple shapes and measure with your pencil.",
+     "drills": [
+      {
+       "title": "Shape breakdown",
+       "do": "Look at three objects and draw each as circles, boxes and triangles before adding detail.",
+       "drill": 1
+      },
+      {
+       "title": "Pencil measuring",
+       "do": "Hold your pencil at arm's length and compare an object's height to its width. Draw it to match.",
+       "drill": 2
+      },
+      {
+       "title": "Negative space",
+       "do": "Draw a chair by drawing only the empty shapes between its legs and rungs.",
+       "link": "https://en.wikipedia.org/wiki/Negative_space",
+       "drill": 3
+      },
+      {
+       "title": "Ellipses",
+       "do": "Draw cups, bowls and jar lids. Notice how a circle looks flatter the lower you view it.",
+       "drill": 4
+      },
+      {
+       "title": "Boxes",
+       "do": "Draw 10 boxes from different angles, including a cereal box from life.",
+       "drill": 5
+      },
+      {
+       "title": "Small still life",
+       "do": "Set up three objects and draw them with correct sizes relative to each other.",
+       "drill": 6
+      }
+     ],
+     "easier": "Draw single objects only, no groups.",
+     "harder": "Draw the group from two different viewpoints.",
+     "check": {
+      "task": "Draw a small still life of three objects for 10 minutes.",
+      "record": "a photo or a note",
+      "ready_if": "The sizes look right next to each other."
+     },
+     "stage": 2,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Light and shading",
+     "goal": "Show light and form with values from light to dark.",
+     "drills": [
+      {
+       "title": "Value scale",
+       "do": "Draw a strip of 5 boxes and shade them from white to your darkest dark in even steps.",
+       "drill": 1
+      },
+      {
+       "title": "Hatching",
+       "do": "Shade with parallel lines, then cross-hatching. Make a value scale with lines only.",
+       "link": "https://en.wikipedia.org/wiki/Hatching",
+       "drill": 2
+      },
+      {
+       "title": "Shaded ball",
+       "do": "Draw a sphere lit from one side: highlight, light, shadow side, cast shadow.",
+       "drill": 3
+      },
+      {
+       "title": "Shaded cube and cylinder",
+       "do": "Shade a box and a can with the light from the same direction.",
+       "drill": 4
+      },
+      {
+       "title": "Squint",
+       "do": "Squint at a real object to see its big light and dark areas. Shade only those, no detail.",
+       "drill": 5
+      },
+      {
+       "title": "Egg study",
+       "do": "Place an egg or a ball near a lamp and draw it with full shading.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use three values only: light, middle and dark.",
+     "harder": "Add reflected light on the shadow side.",
+     "check": {
+      "task": "Draw and shade one object near a lamp for 10 minutes.",
+      "record": "a photo or a note",
+      "ready_if": "It looks round or solid, not flat."
+     },
+     "stage": 3,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Perspective",
+     "goal": "Draw space and depth with one-point and two-point perspective.",
+     "drills": [
+      {
+       "title": "One-point boxes",
+       "do": "Draw a horizon line and one dot on it. Draw 6 boxes with their sides heading to the dot.",
+       "link": "https://en.wikipedia.org/wiki/Perspective_%28graphical%29",
+       "drill": 1
+      },
+      {
+       "title": "A hallway",
+       "do": "Draw a hallway or road in one-point perspective with doors or posts.",
+       "drill": 2
+      },
+      {
+       "title": "Two-point boxes",
+       "do": "Put two dots far apart on the horizon. Draw boxes with edges heading to both.",
+       "drill": 3
+      },
+      {
+       "title": "A building corner",
+       "do": "Draw the corner of a house or a room in two-point perspective.",
+       "drill": 4
+      },
+      {
+       "title": "Room from life",
+       "do": "Sit in a corner and draw the room. Find the horizon at your eye level first.",
+       "drill": 5
+      },
+      {
+       "title": "Objects in space",
+       "do": "Draw three objects on a table, smaller and higher on the page as they go back.",
+       "drill": 6
+      }
+     ],
+     "easier": "Stay with one-point perspective all week.",
+     "harder": "Add a door that is half open.",
+     "check": {
+      "task": "Draw a street, hallway or room in perspective for 10 minutes.",
+      "record": "a photo or a note",
+      "ready_if": "Lines that should meet do meet at your dots."
+     },
+     "stage": 4,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Gesture and people",
+     "goal": "Draw quick, lively figures and simple proportions.",
+     "drills": [
+      {
+       "title": "30-second gestures",
+       "do": "Draw a person (a photo, a paused video, or someone nearby) in 30 seconds, catching the main curve of the pose. Do 15.",
+       "link": "https://en.wikipedia.org/wiki/Gesture_drawing",
+       "drill": 1
+      },
+      {
+       "title": "Stick and bean",
+       "do": "Draw figures as a line of action plus a bean shape for the body. Do 10 poses.",
+       "drill": 2
+      },
+      {
+       "title": "Heads",
+       "do": "Draw an oval head and place the eyes about halfway down. Draw 6 heads facing different ways.",
+       "drill": 3
+      },
+      {
+       "title": "Hands again",
+       "do": "Draw your hand in three poses, as shapes first, then contour.",
+       "drill": 4
+      },
+      {
+       "title": "Longer pose",
+       "do": "Draw one figure for 10 minutes: gesture first, then shapes, then contour.",
+       "drill": 5
+      },
+      {
+       "title": "People out and about",
+       "do": "Sketch people in a cafe, a park or on TV with quick gestures.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use 1-minute poses instead of 30 seconds.",
+     "harder": "Do 15-second poses and add a 5-minute pose at the end.",
+     "check": {
+      "task": "Ten 30-second gestures, then one 5-minute figure.",
+      "record": "a photo or a note",
+      "ready_if": "Your figures show movement, not just stiff outlines."
+     },
+     "stage": 5,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Putting it together",
+     "goal": "Combine line, proportion, shading and space in finished drawings.",
+     "drills": [
+      {
+       "title": "Plan a drawing",
+       "do": "Pick a subject, make three tiny thumbnail sketches and choose the best layout.",
+       "drill": 1
+      },
+      {
+       "title": "Still life, part 1",
+       "do": "Draw your chosen still life with shapes and proportion.",
+       "drill": 2
+      },
+      {
+       "title": "Still life, part 2",
+       "do": "Shade the same drawing with a clear light direction.",
+       "drill": 3
+      },
+      {
+       "title": "A view",
+       "do": "Draw a view from a window or outdoors with a near, middle and far part.",
+       "drill": 4
+      },
+      {
+       "title": "Portrait from a photo",
+       "do": "Draw a face from a photo, measuring with your pencil.",
+       "drill": 5
+      },
+      {
+       "title": "Free choice",
+       "do": "Draw anything you love for 10 minutes, using what you have learned.",
+       "drill": 6
+      }
+     ],
+     "easier": "Spread one finished drawing across two sessions.",
+     "harder": "Work from life only, no photos.",
+     "check": {
+      "task": "Draw the same subject as your first session (your hand or the mug) for 10 minutes. Put the two side by side.",
+      "record": "a photo or a note on what changed",
+      "ready_if": "You can point to at least three things you now do differently."
+     },
+     "stage": 6,
+     "level": "Building",
+     "gen": {}
+    }
+   ],
+   "source": "omega"
+  },
+  {
+   "id": "chess",
+   "name": "Chess",
+   "emoji": "♟️",
+   "blurb": "Learn the rules, the basic checkmates, simple tactics and a sound plan for the opening.",
+   "need": "A chess set, or a free online board.",
+   "safety": null,
+   "generator": null,
+   "measure": {
+    "name": "Puzzles solved and games played",
+    "unit": "puzzles"
+   },
+   "warmups": [
+    "Set up the board from memory: a light square in each player's right-hand corner, the queen on her own color.",
+    "Name every square a knight can reach from g1, then from e4.",
+    "Solve two easy puzzles on a free puzzle board, or replay the last game you played.",
+    "Say how each piece moves, out loud, in under a minute."
+   ],
+   "wrapup": "Write one thing you learned today in a sentence.",
+   "resources": [
+    {
+     "label": "Free practice lessons",
+     "url": "https://lichess.org/practice"
+    },
+    {
+     "label": "Free puzzles",
+     "url": "https://lichess.org/training"
+    },
+    {
+     "label": "Puzzles by theme",
+     "url": "https://lichess.org/training/themes"
+    },
+    {
+     "label": "Free analysis board",
+     "url": "https://lichess.org/analysis"
+    },
+    {
+     "label": "Official Laws of Chess",
+     "url": "https://handbook.fide.com/chapter/E012023"
+    },
+    {
+     "label": "Chess Fundamentals (full book, free)",
+     "url": "https://www.gutenberg.org/ebooks/33870"
+    }
+   ],
+   "stages": [
+    {
+     "title": "The pieces and the rules",
+     "goal": "Know how every piece moves and the special rules.",
+     "drills": [
+      {
+       "title": "Rooks and bishops",
+       "do": "Rooks move along ranks and files; bishops move diagonally. Place one on a board and list every square it can reach. Then try with pieces in the way.",
+       "drill": 1
+      },
+      {
+       "title": "Queen, king and knight",
+       "do": "The queen moves like a rook or a bishop; the king moves one square in any direction; the knight moves in an L and can jump. Move each around an empty board.",
+       "drill": 2
+      },
+      {
+       "title": "Pawns",
+       "do": "Pawns move forward one square, or two from their starting square, and capture one square diagonally forward. Play a pawns-only game: first pawn to the far side wins.",
+       "drill": 3
+      },
+      {
+       "title": "Check and checkmate",
+       "do": "Set up 5 positions where a king is in check and find every way out: move, block or capture. Then set up one checkmate.",
+       "drill": 4
+      },
+      {
+       "title": "Castling and promotion",
+       "do": "Practice castling on both sides. You may not castle out of, through or into check, or if the king or that rook has moved. Promote a pawn to a queen.",
+       "drill": 5
+      },
+      {
+       "title": "En passant and draws",
+       "do": "Set up an en passant capture. Then read about stalemate, threefold repetition and the 50-move rule in the official Laws.",
+       "link": "https://handbook.fide.com/chapter/E012023",
+       "drill": 6
+      }
+     ],
+     "easier": "Learn one piece per session.",
+     "harder": "Play one full slow game against a friend or a computer at its easiest level.",
+     "check": {
+      "task": "Play a full game and make only legal moves, including one castle.",
+      "record": "whether every move was legal",
+      "ready_if": "No illegal moves."
+     },
+     "stage": 1,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Basic checkmates",
+     "goal": "Checkmate a lone king with a queen, and with a rook.",
+     "drills": [
+      {
+       "title": "Queen and king",
+       "do": "Set up your king and queen against a lone king. Use the queen to herd the king to the edge, then bring your king up and mate. Watch out for stalemate.",
+       "drill": 1
+      },
+      {
+       "title": "Queen mate again",
+       "do": "Repeat the queen mate from three different starting positions.",
+       "drill": 2
+      },
+      {
+       "title": "Rook and king",
+       "do": "Use the rook to cut the king off rank by rank, with your king's help, until it is on the edge. Then mate.",
+       "drill": 3
+      },
+      {
+       "title": "Rook mate again",
+       "do": "Repeat the rook mate from three different starting positions. Count your moves.",
+       "drill": 4
+      },
+      {
+       "title": "Back-rank mate",
+       "do": "Set up a king stuck behind its own pawns and mate it with a rook on the back rank. Then see how a pawn move made earlier would have prevented it.",
+       "drill": 5
+      },
+      {
+       "title": "Checkmate practice",
+       "do": "Open the free practice lessons and do the checkmate section.",
+       "link": "https://lichess.org/practice",
+       "drill": 6
+      }
+     ],
+     "easier": "Stick to the queen mate this week.",
+     "harder": "Mate with two rooks, then with a queen against a king and pawn.",
+     "check": {
+      "task": "Mate a lone king with king and rook from a random start.",
+      "record": "moves needed",
+      "ready_if": "Checkmate within 30 moves, with no stalemate."
+     },
+     "stage": 2,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Opening principles",
+     "goal": "Start games with a sound plan.",
+     "drills": [
+      {
+       "title": "Control the center",
+       "do": "Play 5 openings where your first moves put pawns on e4 or d4 (e5 or d5 as Black).",
+       "drill": 1
+      },
+      {
+       "title": "Develop pieces",
+       "do": "Bring out knights and bishops before moving the same piece twice. Play the first 8 moves of 3 games this way.",
+       "drill": 2
+      },
+      {
+       "title": "Castle early",
+       "do": "Play 3 openings where you castle within the first 10 moves.",
+       "drill": 3
+      },
+      {
+       "title": "Don't hang pieces",
+       "do": "Before each move, ask: what does my move leave unprotected, and what is my opponent threatening?",
+       "drill": 4
+      },
+      {
+       "title": "Study a model game",
+       "do": "Play through one short example from the free book on a board.",
+       "link": "https://www.gutenberg.org/ebooks/33870",
+       "drill": 5
+      },
+      {
+       "title": "Play",
+       "do": "Play one game, slowly, focusing only on the opening principles.",
+       "drill": 6
+      }
+     ],
+     "easier": "Play only the first 10 moves of games.",
+     "harder": "Play two games and write down your first 10 moves of each.",
+     "check": {
+      "task": "Play a game and review its first 10 moves.",
+      "record": "how many opening principles you followed",
+      "ready_if": "Center, development and castling all done by move 10."
+     },
+     "stage": 3,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Tactics",
+     "goal": "Spot forks, pins, skewers and discovered attacks.",
+     "drills": [
+      {
+       "title": "Forks",
+       "do": "A fork attacks two pieces at once. Solve 5 fork puzzles from the puzzles by theme.",
+       "link": "https://lichess.org/training/themes",
+       "drill": 1
+      },
+      {
+       "title": "Pins",
+       "do": "A pin stops a piece from moving without exposing a more valuable piece behind it. Solve 5 pin puzzles.",
+       "drill": 2
+      },
+      {
+       "title": "Skewers",
+       "do": "A skewer attacks a valuable piece that must move, exposing a piece behind it. Solve 5 skewer puzzles.",
+       "drill": 3
+      },
+      {
+       "title": "Discovered attacks",
+       "do": "Moving one piece uncovers an attack by another. Solve 5 discovered attack puzzles.",
+       "drill": 4
+      },
+      {
+       "title": "Mixed puzzles",
+       "do": "Solve 10 mixed puzzles. Before each move, look at every check, capture and threat.",
+       "link": "https://lichess.org/training",
+       "drill": 5
+      },
+      {
+       "title": "Play and spot",
+       "do": "Play one game and look for one tactic per move, for you and your opponent.",
+       "drill": 6
+      }
+     ],
+     "easier": "Solve 3 puzzles per session instead of 5.",
+     "harder": "Solve puzzles without moving the pieces until you are sure.",
+     "check": {
+      "task": "Solve 10 mixed puzzles.",
+      "record": "how many you solved on the first try",
+      "ready_if": "6 or more out of 10."
+     },
+     "stage": 4,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Endgames",
+     "goal": "Win and hold simple king and pawn endings.",
+     "drills": [
+      {
+       "title": "King activity",
+       "do": "In the endgame the king becomes a fighter. Play out king and pawn against king from 5 positions.",
+       "drill": 1
+      },
+      {
+       "title": "The square of the pawn",
+       "do": "Picture a square from the pawn to its promotion rank. If the defending king can step into it, it catches the pawn. Test the rule on 5 positions.",
+       "drill": 2
+      },
+      {
+       "title": "Opposition",
+       "do": "When the kings face each other with one square between them, the side that just moved has the opposition. Practice it in king and pawn endings.",
+       "drill": 3
+      },
+      {
+       "title": "Rook endings",
+       "do": "Rooks belong behind passed pawns. Play out 3 rook and pawn positions.",
+       "drill": 4
+      },
+      {
+       "title": "Endgame lessons",
+       "do": "Do the pawn endgame section of the free practice lessons.",
+       "link": "https://lichess.org/practice",
+       "drill": 5
+      },
+      {
+       "title": "Study from the book",
+       "do": "Play through the first endgame examples of the free book.",
+       "link": "https://www.gutenberg.org/ebooks/33870",
+       "drill": 6
+      }
+     ],
+     "easier": "Practice only king and pawn against king.",
+     "harder": "Play each position as both sides.",
+     "check": {
+      "task": "Win king and pawn against king from 3 winning positions.",
+      "record": "how many you won",
+      "ready_if": "All 3 won."
+     },
+     "stage": 5,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Playing and learning from games",
+     "goal": "Play full games and learn from your own mistakes.",
+     "drills": [
+      {
+       "title": "Slow game",
+       "do": "Play one slow game. Write down your moves.",
+       "drill": 1
+      },
+      {
+       "title": "Review",
+       "do": "Replay your last game on the free analysis board. Find your biggest mistake.",
+       "link": "https://lichess.org/analysis",
+       "drill": 2
+      },
+      {
+       "title": "Threat check",
+       "do": "Play a game where before every move you name your opponent's threat.",
+       "drill": 3
+      },
+      {
+       "title": "Middle game plans",
+       "do": "Play a game and, after the opening, pick one weak point to aim at.",
+       "drill": 4
+      },
+      {
+       "title": "Puzzle rush",
+       "do": "Solve as many puzzles as you can in 10 minutes.",
+       "drill": 5
+      },
+      {
+       "title": "Review again",
+       "do": "Review one more of your games and write down the lesson in one sentence.",
+       "drill": 6
+      }
+     ],
+     "easier": "Play shorter games and review just one moment.",
+     "harder": "Review every capture in your game, not only the big mistake.",
+     "check": {
+      "task": "Play a full game, then review it.",
+      "record": "result and your one-sentence lesson",
+      "ready_if": "You found at least one mistake and a better move."
+     },
+     "stage": 6,
+     "level": "Building",
+     "gen": {}
+    }
+   ],
+   "source": "omega"
+  },
+  {
+   "id": "spreadsheets",
+   "name": "Spreadsheets",
+   "emoji": "📊",
+   "blurb": "Formulas, sorting, lookups, charts and pivot tables in any common spreadsheet app.",
+   "need": "Any spreadsheet app: Google Sheets, Excel or LibreOffice Calc. Each day's practice table is made for you in chat.",
+   "safety": null,
+   "generator": "sheets",
+   "measure": {
+    "name": "Practice questions answered correctly",
+    "unit": "answers"
+   },
+   "warmups": [
+    "Paste today's practice table into a new sheet. Make the header row bold.",
+    "Move around with only the keyboard: arrow keys, Ctrl (Cmd on a Mac) plus an arrow to jump to the edge, Shift plus arrows to select.",
+    "Select the Units column and read its total in the status bar at the bottom of the window.",
+    "Undo, redo, copy and paste five times using only keyboard shortcuts."
+   ],
+   "wrapup": "Reply with your answers. Your bot checks them against the right values.",
+   "resources": [
+    {
+     "label": "Google Sheets function list",
+     "url": "https://support.google.com/docs/table/25273"
+    },
+    {
+     "label": "Excel function list",
+     "url": "https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188"
+    },
+    {
+     "label": "LibreOffice Calc help",
+     "url": "https://help.libreoffice.org/latest/en-US/text/scalc/main0000.html"
+    }
+   ],
+   "stages": [
+    {
+     "title": "Cells and simple formulas",
+     "goal": "Enter data and use SUM, AVERAGE, MIN and MAX.",
+     "gen": {
+      "questions": [
+       "total_units",
+       "avg_price",
+       "max_units",
+       "min_units"
+      ]
+     },
+     "drills": [
+      {
+       "title": "Cells and ranges",
+       "do": "Paste today's table. Click cells and read their addresses, like B3. Select the Units numbers and see their sum in the status bar.",
+       "drill": 1
+      },
+      {
+       "title": "SUM",
+       "do": "Under the Units column, type =SUM( and select the numbers. Press Enter. Answer today's questions.",
+       "drill": 2
+      },
+      {
+       "title": "AVERAGE, MIN, MAX",
+       "do": "Use =AVERAGE, =MIN and =MAX on today's columns. Answer today's questions.",
+       "drill": 3
+      },
+      {
+       "title": "Simple math",
+       "do": "Add a Revenue column with =D2*E2 (units times price) and fill it down by dragging the small square at the cell's corner.",
+       "drill": 4
+      },
+      {
+       "title": "Fill a series",
+       "do": "Type 1 and 2 in two cells, select both and drag down to make 1 to 20. Try it with Jan and Feb too.",
+       "drill": 5
+      },
+      {
+       "title": "Put it together",
+       "do": "Make a small summary block: total units, average price, biggest sale. Answer today's questions.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use the AutoSum button instead of typing formulas.",
+     "harder": "Write every formula by typing, no buttons.",
+     "check": {
+      "task": "Answer today's practice questions using formulas only.",
+      "record": "correct answers",
+      "ready_if": "All correct."
+     },
+     "stage": 1,
+     "level": "Foundations"
+    },
+    {
+     "title": "Formatting, sorting and filtering",
+     "goal": "Make tables readable and find what you need fast.",
+     "gen": {
+      "questions": [
+       "top_item_by_units",
+       "count_region",
+       "total_revenue"
+      ]
+     },
+     "drills": [
+      {
+       "title": "Number formats",
+       "do": "Format prices as currency and add a Revenue column formatted with two decimals.",
+       "drill": 1
+      },
+      {
+       "title": "Sort",
+       "do": "Sort the table by Units from largest to smallest. Then by Region, then by Item.",
+       "drill": 2
+      },
+      {
+       "title": "Filter",
+       "do": "Turn on a filter and show only one region. Answer today's questions.",
+       "drill": 3
+      },
+      {
+       "title": "Freeze the header",
+       "do": "Freeze the top row so it stays visible when you scroll.",
+       "drill": 4
+      },
+      {
+       "title": "Absolute references",
+       "do": "Put a tax rate in a cell, like 0.08 in H1. Write =F2*$H$1 next to your Revenue column and fill it down. See why the dollar signs matter.",
+       "drill": 5
+      },
+      {
+       "title": "Tidy table",
+       "do": "Make today's table look finished: bold headers, borders, aligned numbers.",
+       "drill": 6
+      }
+     ],
+     "easier": "Sort only; leave filters for next week.",
+     "harder": "Sort by two columns at once.",
+     "check": {
+      "task": "Answer today's practice questions with sort and filter.",
+      "record": "correct answers",
+      "ready_if": "All correct."
+     },
+     "stage": 2,
+     "level": "Foundations"
+    },
+    {
+     "title": "IF, COUNTIF and SUMIF",
+     "goal": "Make formulas that decide and count.",
+     "gen": {
+      "questions": [
+       "count_region",
+       "sum_units_region",
+       "count_units_over"
+      ]
+     },
+     "drills": [
+      {
+       "title": "IF",
+       "do": "Add a column with =IF(D2>=50,\"Big\",\"Small\") and fill it down.",
+       "drill": 1
+      },
+      {
+       "title": "COUNTIF",
+       "do": "Count rows for one region with =COUNTIF(C2:C13,\"North\"). Answer today's questions.",
+       "drill": 2
+      },
+      {
+       "title": "SUMIF",
+       "do": "Total the units for one region with =SUMIF(C2:C13,\"North\",D2:D13).",
+       "drill": 3
+      },
+      {
+       "title": "Conditions with numbers",
+       "do": "Count rows with more than 50 units with =COUNTIF(D2:D13,\">50\").",
+       "drill": 4
+      },
+      {
+       "title": "Combine",
+       "do": "Make a small table of each region with its row count and total units.",
+       "drill": 5
+      },
+      {
+       "title": "Check yourself",
+       "do": "Answer today's questions, then check one answer with a filter instead.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use only COUNTIF this week.",
+     "harder": "Try COUNTIFS and SUMIFS with two conditions.",
+     "check": {
+      "task": "Answer today's practice questions with formulas.",
+      "record": "correct answers",
+      "ready_if": "All correct."
+     },
+     "stage": 3,
+     "level": "Foundations"
+    },
+    {
+     "title": "Lookups",
+     "goal": "Pull values from another table.",
+     "gen": {
+      "questions": [
+       "lookup_price",
+       "lookup_units_first"
+      ],
+      "price_list": true
+     },
+     "drills": [
+      {
+       "title": "Two tables",
+       "do": "Paste today's sales table and its price list side by side.",
+       "drill": 1
+      },
+      {
+       "title": "VLOOKUP",
+       "do": "Look up a price with =VLOOKUP(item, price list range, 2, FALSE). FALSE means an exact match.",
+       "drill": 2
+      },
+      {
+       "title": "INDEX and MATCH",
+       "do": "Do the same lookup with =INDEX(price column, MATCH(item, item column, 0)).",
+       "drill": 3
+      },
+      {
+       "title": "Missing values",
+       "do": "Look up an item that isn't in the list, then wrap the formula in IFERROR to show 'Not found'.",
+       "drill": 4
+      },
+      {
+       "title": "XLOOKUP if you have it",
+       "do": "If your app has XLOOKUP, repeat the lookup with it. If not, repeat INDEX and MATCH.",
+       "drill": 5
+      },
+      {
+       "title": "Answer questions",
+       "do": "Answer today's questions using lookups.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use VLOOKUP only.",
+     "harder": "Look up from a table on another sheet tab.",
+     "check": {
+      "task": "Answer today's lookup questions.",
+      "record": "correct answers",
+      "ready_if": "All correct."
+     },
+     "stage": 4,
+     "level": "Building"
+    },
+    {
+     "title": "Charts and clean data",
+     "goal": "Show data visually and keep it clean.",
+     "gen": {
+      "questions": [
+       "total_units",
+       "top_region_by_units"
+      ]
+     },
+     "drills": [
+      {
+       "title": "A column chart",
+       "do": "Chart units by item as a column chart. Give it a clear title.",
+       "drill": 1
+      },
+      {
+       "title": "A line chart",
+       "do": "Make a line chart of units by month from today's table.",
+       "drill": 2
+      },
+      {
+       "title": "Conditional formatting",
+       "do": "Color Units cells over 50 green and under 20 red.",
+       "drill": 3
+      },
+      {
+       "title": "Data validation",
+       "do": "Make the Region column a drop-down list of the four regions.",
+       "drill": 4
+      },
+      {
+       "title": "Text clean-up",
+       "do": "Use TRIM, UPPER and PROPER on messy text, and join text with &.",
+       "drill": 5
+      },
+      {
+       "title": "Mini dashboard",
+       "do": "Build two charts and a summary block on one sheet.",
+       "drill": 6
+      }
+     ],
+     "easier": "Make one chart per session.",
+     "harder": "Add a chart that updates when you filter.",
+     "check": {
+      "task": "Chart total units by region and answer today's questions.",
+      "record": "correct answers",
+      "ready_if": "All correct and the chart is readable."
+     },
+     "stage": 5,
+     "level": "Building"
+    },
+    {
+     "title": "Pivot tables and a mini project",
+     "goal": "Summarize data fast and finish a real sheet.",
+     "gen": {
+      "questions": [
+       "sum_units_region",
+       "top_region_by_units",
+       "total_revenue"
+      ]
+     },
+     "drills": [
+      {
+       "title": "First pivot table",
+       "do": "Insert a pivot table with Region as rows and the sum of Units as values.",
+       "link": "https://en.wikipedia.org/wiki/Pivot_table",
+       "drill": 1
+      },
+      {
+       "title": "Pivot by two fields",
+       "do": "Add Item as columns. Read off which region sold the most of one item.",
+       "drill": 2
+      },
+      {
+       "title": "Dates",
+       "do": "Use =TODAY() and subtract dates to count the days since each order.",
+       "drill": 3
+      },
+      {
+       "title": "Plan your own sheet",
+       "do": "Pick a real use: a budget, a habit tracker or a reading log. Sketch its columns.",
+       "drill": 4
+      },
+      {
+       "title": "Build it",
+       "do": "Build your sheet with at least one SUMIF, one lookup or one chart.",
+       "drill": 5
+      },
+      {
+       "title": "Finish it",
+       "do": "Polish your sheet: formats, a frozen header and a chart.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use the practice table for your project.",
+     "harder": "Add a pivot chart to your project.",
+     "check": {
+      "task": "Answer today's questions using a pivot table.",
+      "record": "correct answers",
+      "ready_if": "All correct."
+     },
+     "stage": 6,
+     "level": "Building"
+    }
+   ],
+   "source": "omega"
+  },
+  {
+   "id": "speaking",
+   "name": "Public speaking",
+   "emoji": "🎤",
+   "blurb": "Speak clearly and calmly, with a simple structure and fewer filler words.",
+   "need": "Your phone's voice or video recorder and a quiet spot.",
+   "safety": null,
+   "generator": "speaking",
+   "measure": {
+    "name": "Talk length and filler words",
+    "unit": "fillers"
+   },
+   "warmups": [
+    "Breathe in for 4 counts and out for 6, five times. Let your shoulders drop.",
+    "Hum for 30 seconds, then say 'red leather, yellow leather' slowly 5 times, then faster.",
+    "Stand tall with your weight on both feet. Say today's topic out loud to an empty room.",
+    "Read any paragraph aloud slowly, pausing at every period for a full breath."
+   ],
+   "wrapup": "Play back your recording. Count your filler words (um, uh, like, you know) and tell me the count and your talk length.",
+   "resources": [
+    {
+     "label": "The Art of Public Speaking (full book, free)",
+     "url": "https://www.gutenberg.org/ebooks/16317"
+    },
+    {
+     "label": "About filler words",
+     "url": "https://en.wikipedia.org/wiki/Speech_disfluency"
+    }
+   ],
+   "stages": [
+    {
+     "title": "Voice, breath and presence",
+     "goal": "Speak for one minute calmly and audibly.",
+     "drills": [
+      {
+       "title": "Baseline",
+       "do": "Record yourself talking about today's topic for 1 minute, with no preparation. Keep this recording.",
+       "drill": 1
+      },
+      {
+       "title": "Breath",
+       "do": "Talk about today's topic in short sentences, breathing at each period. Record 1 minute.",
+       "drill": 2
+      },
+      {
+       "title": "Volume",
+       "do": "Speak to the far wall of the room, not to someone beside you. Record 1 minute.",
+       "drill": 3
+      },
+      {
+       "title": "Posture",
+       "do": "Record a 1-minute video. Feet planted, hands still or open, eyes up.",
+       "drill": 4
+      },
+      {
+       "title": "Pauses",
+       "do": "Replace every 'um' with a silent pause. Record 1 minute.",
+       "drill": 5
+      },
+      {
+       "title": "Slow down",
+       "do": "Record 1 minute at what feels slightly too slow. Play it back and notice how it sounds.",
+       "drill": 6
+      }
+     ],
+     "easier": "Record 30 seconds instead of a minute.",
+     "harder": "Record 2 minutes.",
+     "check": {
+      "task": "Record 1 minute on today's topic.",
+      "record": "length and filler words",
+      "ready_if": "Fewer filler words than your baseline."
+     },
+     "stage": 1,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Structure",
+     "goal": "Use an opening, three points and a close.",
+     "drills": [
+      {
+       "title": "Three points",
+       "do": "Write three short points on today's topic. Record a talk that covers each in order.",
+       "drill": 1
+      },
+      {
+       "title": "Strong opening",
+       "do": "Open with a question, a true fact you know well, or a short scene. Record the first 30 seconds three ways.",
+       "drill": 2
+      },
+      {
+       "title": "Clear close",
+       "do": "End with one sentence that sums up and one thing to do. Record 1 minute that ends strongly.",
+       "drill": 3
+      },
+      {
+       "title": "Signposts",
+       "do": "Use words like 'first', 'next' and 'finally'. Record a 2-minute talk.",
+       "drill": 4
+      },
+      {
+       "title": "Notes on one card",
+       "do": "Put only 5 keywords on a card. Give a 2-minute talk from it.",
+       "drill": 5
+      },
+      {
+       "title": "Full run",
+       "do": "Give a 2-minute structured talk on today's topic.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use two points instead of three.",
+     "harder": "Give the talk with no notes.",
+     "check": {
+      "task": "Record a 2-minute talk with an opening, three points and a close.",
+      "record": "length and filler words",
+      "ready_if": "All parts present and within 20 seconds of 2 minutes."
+     },
+     "stage": 2,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Stories",
+     "goal": "Tell a short true story that holds attention.",
+     "drills": [
+      {
+       "title": "Pick a story",
+       "do": "Write down three short moments from your own life. Pick one.",
+       "drill": 1
+      },
+      {
+       "title": "Shape",
+       "do": "Tell the story as: where and when, what went wrong, what you did, what changed. Record it.",
+       "drill": 2
+      },
+      {
+       "title": "Details",
+       "do": "Add one detail for each sense you can. Record it again.",
+       "drill": 3
+      },
+      {
+       "title": "Dialogue",
+       "do": "Retell it with one line someone actually said. Record it.",
+       "drill": 4
+      },
+      {
+       "title": "Cut it down",
+       "do": "Tell the same story in 60 seconds.",
+       "drill": 5
+      },
+      {
+       "title": "A story with a point",
+       "do": "Tell the story, then one sentence about what it means. Record it.",
+       "drill": 6
+      }
+     ],
+     "easier": "Tell the story to a friend instead of recording it.",
+     "harder": "Tell it standing up, on video, with no notes.",
+     "check": {
+      "task": "Record a 2-minute true story.",
+      "record": "length and filler words",
+      "ready_if": "It has a clear start, problem and change."
+     },
+     "stage": 3,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Explaining clearly",
+     "goal": "Explain a process so a beginner can follow.",
+     "drills": [
+      {
+       "title": "One idea",
+       "do": "Explain today's topic to an imagined 12-year-old in 1 minute.",
+       "drill": 1
+      },
+      {
+       "title": "Steps",
+       "do": "Explain how to do something you know well, in 5 steps. Record it.",
+       "drill": 2
+      },
+      {
+       "title": "An example",
+       "do": "Add one concrete example to your last explanation.",
+       "drill": 3
+      },
+      {
+       "title": "Show it",
+       "do": "Explain something while showing it with an object or a sketch.",
+       "drill": 4
+      },
+      {
+       "title": "Check understanding",
+       "do": "Give your explanation to someone and ask them to repeat it back.",
+       "drill": 5
+      },
+      {
+       "title": "Full run",
+       "do": "Give a 3-minute how-to talk.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use 3 steps instead of 5.",
+     "harder": "Explain without any jargon at all.",
+     "check": {
+      "task": "Record a 3-minute how-to talk.",
+      "record": "length and filler words",
+      "ready_if": "Someone could follow your steps."
+     },
+     "stage": 4,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Persuading",
+     "goal": "Make a clear case and ask for something.",
+     "drills": [
+      {
+       "title": "One-sentence case",
+       "do": "Write your position on today's topic in one sentence. Say it out loud 5 ways.",
+       "drill": 1
+      },
+      {
+       "title": "Reasons",
+       "do": "Give three reasons, the strongest last. Record it.",
+       "drill": 2
+      },
+      {
+       "title": "The other side",
+       "do": "Name the best argument against you and answer it fairly. Record it.",
+       "drill": 3
+      },
+      {
+       "title": "The ask",
+       "do": "End with a specific request. Record 1 minute.",
+       "drill": 4
+      },
+      {
+       "title": "Emphasis",
+       "do": "Mark the three most important words in your talk and lean on them.",
+       "drill": 5
+      },
+      {
+       "title": "Full run",
+       "do": "Give a 3-minute persuasive talk.",
+       "drill": 6
+      }
+     ],
+     "easier": "Persuade on something low-stakes, like a favorite food.",
+     "harder": "Argue for the side you disagree with.",
+     "check": {
+      "task": "Record a 3-minute persuasive talk.",
+      "record": "length and filler words",
+      "ready_if": "It has a clear position, reasons and an ask."
+     },
+     "stage": 5,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Speaking on your feet",
+     "goal": "Answer unexpected questions and give a full talk.",
+     "drills": [
+      {
+       "title": "Impromptu",
+       "do": "Take today's topic as a surprise: 10 seconds to think, then speak for 1 minute.",
+       "drill": 1
+      },
+      {
+       "title": "Answer framework",
+       "do": "Answer today's topic with: point, reason, example, point. 1 minute.",
+       "drill": 2
+      },
+      {
+       "title": "Q and A",
+       "do": "Write 5 questions someone might ask after one of your talks. Answer each in 30 seconds.",
+       "drill": 3
+      },
+      {
+       "title": "Recover",
+       "do": "Practice losing your place: pause, breathe, repeat your last point, carry on.",
+       "drill": 4
+      },
+      {
+       "title": "Prepare a 5-minute talk",
+       "do": "Outline a 5-minute talk on a topic you care about.",
+       "drill": 5
+      },
+      {
+       "title": "Rehearse",
+       "do": "Rehearse your 5-minute talk twice, recording the second run.",
+       "drill": 6
+      }
+     ],
+     "easier": "Take 30 seconds to prepare before each impromptu answer.",
+     "harder": "Ask someone else to pick your surprise topics.",
+     "check": {
+      "task": "Record your 5-minute talk and compare it with your first baseline recording.",
+      "record": "length, filler words and what changed",
+      "ready_if": "Fewer filler words than your first recording."
+     },
+     "stage": 6,
+     "level": "Building",
+     "gen": {}
+    }
+   ],
+   "source": "omega"
+  },
+  {
+   "id": "mentalmath",
+   "name": "Mental math",
+   "emoji": "🧮",
+   "blurb": "Add, subtract, multiply and work out percentages in your head, quickly and accurately.",
+   "need": "Nothing but chat. Each day's problems are made fresh and checked by your bot.",
+   "safety": null,
+   "generator": "math",
+   "measure": {
+    "name": "Score out of 10 and time",
+    "unit": "score"
+   },
+   "warmups": [
+    "Count up by 7 from 0 to 70, then back down.",
+    "Make 100: say the partner of 37, 64, 18, 81 and 45.",
+    "Double these quickly: 16, 35, 48, 125.",
+    "Halve these quickly: 74, 130, 58, 312."
+   ],
+   "wrapup": "Reply with your answers in order, separated by commas, and roughly how long you took.",
+   "resources": [
+    {
+     "label": "About mental calculation",
+     "url": "https://en.wikipedia.org/wiki/Mental_calculation"
+    }
+   ],
+   "stages": [
+    {
+     "title": "Adding left to right",
+     "goal": "Add two-digit numbers in your head.",
+     "gen": {
+      "kind": "add2"
+     },
+     "drills": [
+      {
+       "title": "Tens first",
+       "do": "Add the tens, then the ones. 47 + 38: 70, then 15, so 85. Solve today's set.",
+       "drill": 1
+      },
+      {
+       "title": "Make a ten",
+       "do": "Shift a little to make a round number: 48 + 27 is 50 + 25. Solve today's set.",
+       "drill": 2
+      },
+      {
+       "title": "Out loud",
+       "do": "Say each step aloud as you solve today's set.",
+       "drill": 3
+      },
+      {
+       "title": "Speed round",
+       "do": "Solve today's set as fast as you can, then redo your slowest one.",
+       "drill": 4
+      },
+      {
+       "title": "Chains",
+       "do": "Solve today's set, then add your first three answers together.",
+       "drill": 5
+      },
+      {
+       "title": "Mixed",
+       "do": "Solve today's set using whichever trick fits each problem.",
+       "drill": 6
+      }
+     ],
+     "easier": "Use smaller numbers: one-digit plus two-digit.",
+     "harder": "Use three-digit plus two-digit numbers.",
+     "check": {
+      "task": "Solve the 10-problem check set.",
+      "record": "score and time",
+      "ready_if": "9 out of 10 or better."
+     },
+     "stage": 1,
+     "level": "Foundations"
+    },
+    {
+     "title": "Subtracting and partners to 100",
+     "goal": "Subtract fast and find partners to 100.",
+     "gen": {
+      "kind": "sub2"
+     },
+     "drills": [
+      {
+       "title": "Partners to 100",
+       "do": "For 37 the partner is 63: the tens add to 9 and the ones add to 10. Solve today's set.",
+       "drill": 1
+      },
+      {
+       "title": "Count up",
+       "do": "For 82 - 47, count up from 47: 3 to get to 50, 32 more to 82, so 35. Solve today's set.",
+       "drill": 2
+      },
+      {
+       "title": "Round and fix",
+       "do": "73 - 28 is 73 - 30, plus 2. Solve today's set.",
+       "drill": 3
+      },
+      {
+       "title": "Speed round",
+       "do": "Solve today's set as fast as you can.",
+       "drill": 4
+      },
+      {
+       "title": "Making change",
+       "do": "Treat each problem as making change from a bill. Solve today's set.",
+       "drill": 5
+      },
+      {
+       "title": "Mixed",
+       "do": "Solve today's set with any trick.",
+       "drill": 6
+      }
+     ],
+     "easier": "Subtract one-digit numbers from two-digit numbers.",
+     "harder": "Subtract two-digit numbers from three-digit numbers.",
+     "check": {
+      "task": "Solve the 10-problem check set.",
+      "record": "score and time",
+      "ready_if": "9 out of 10 or better."
+     },
+     "stage": 2,
+     "level": "Foundations"
+    },
+    {
+     "title": "Shortcuts: times 5, 11 and 25",
+     "goal": "Multiply by 5, 11 and 25 in a blink.",
+     "gen": {
+      "kind": "x5_11_25"
+     },
+     "drills": [
+      {
+       "title": "Times 5",
+       "do": "Times 5 is times 10, then halve. 48 x 5: 480, half is 240. Solve today's set.",
+       "drill": 1
+      },
+      {
+       "title": "Times 11",
+       "do": "For a two-digit number, put the sum of its digits in the middle: 43 x 11 is 4, 7, 3, so 473. If the sum is 10 or more, carry the 1: 68 x 11 is 748.",
+       "drill": 2
+      },
+      {
+       "title": "Times 25",
+       "do": "Times 25 is times 100, then divide by 4. 36 x 25: 3600 divided by 4 is 900.",
+       "drill": 3
+      },
+      {
+       "title": "Mixed shortcuts",
+       "do": "Solve today's set, naming the trick before you start each problem.",
+       "drill": 4
+      },
+      {
+       "title": "Speed round",
+       "do": "Solve today's set as fast as you can.",
+       "drill": 5
+      },
+      {
+       "title": "Explain it",
+       "do": "Solve today's set, then explain in one sentence why one of the tricks works.",
+       "drill": 6
+      }
+     ],
+     "easier": "Practice only times 5.",
+     "harder": "Use three-digit numbers.",
+     "check": {
+      "task": "Solve the 10-problem check set.",
+      "record": "score and time",
+      "ready_if": "9 out of 10 or better."
+     },
+     "stage": 3,
+     "level": "Foundations"
+    },
+    {
+     "title": "Two-digit times one-digit",
+     "goal": "Multiply by splitting numbers apart.",
+     "gen": {
+      "kind": "mul21"
+     },
+     "drills": [
+      {
+       "title": "Split",
+       "do": "67 x 4 is 60 x 4 plus 7 x 4: 240 + 28 = 268. Solve today's set.",
+       "drill": 1
+      },
+      {
+       "title": "Double and halve",
+       "do": "Double one number and halve the other: 16 x 35 is 8 x 70, which is 560. Solve today's set.",
+       "drill": 2
+      },
+      {
+       "title": "Round and fix",
+       "do": "49 x 6 is 50 x 6, minus 6: 294. Solve today's set.",
+       "drill": 3
+      },
+      {
+       "title": "Speed round",
+       "do": "Solve today's set as fast as you can.",
+       "drill": 4
+      },
+      {
+       "title": "Out loud",
+       "do": "Say each step aloud while you solve.",
+       "drill": 5
+      },
+      {
+       "title": "Mixed",
+       "do": "Solve today's set using any trick.",
+       "drill": 6
+      }
+     ],
+     "easier": "Keep the one-digit number at 2, 3 or 4.",
+     "harder": "Try two-digit times two-digit problems.",
+     "check": {
+      "task": "Solve the 10-problem check set.",
+      "record": "score and time",
+      "ready_if": "9 out of 10 or better."
+     },
+     "stage": 4,
+     "level": "Building"
+    },
+    {
+     "title": "Squares and percentages",
+     "goal": "Square numbers and find common percentages.",
+     "gen": {
+      "kind": "sq_pct"
+     },
+     "drills": [
+      {
+       "title": "Squares ending in 5",
+       "do": "For 35 squared: 3 x 4 = 12, then write 25 after it, so 1225. Solve today's set.",
+       "drill": 1
+      },
+      {
+       "title": "Squares near a round number",
+       "do": "For 23 squared: 20 x 26 + 3 x 3 = 520 + 9 = 529. Solve today's set.",
+       "drill": 2
+      },
+      {
+       "title": "10 percent",
+       "do": "10% moves the decimal point one place left. 10% of 340 is 34. Solve today's set.",
+       "drill": 3
+      },
+      {
+       "title": "15 and 20 percent",
+       "do": "15% is 10% plus half of that. 20% is 10% doubled. Solve today's set.",
+       "drill": 4
+      },
+      {
+       "title": "Speed round",
+       "do": "Solve today's set as fast as you can.",
+       "drill": 5
+      },
+      {
+       "title": "Mixed",
+       "do": "Solve today's set using any trick.",
+       "drill": 6
+      }
+     ],
+     "easier": "Practice 10% and 20% only.",
+     "harder": "Square numbers from 31 to 60.",
+     "check": {
+      "task": "Solve the 10-problem check set.",
+      "record": "score and time",
+      "ready_if": "9 out of 10 or better."
+     },
+     "stage": 5,
+     "level": "Building"
+    },
+    {
+     "title": "Mixed and estimating",
+     "goal": "Pick the right trick fast and estimate sensibly.",
+     "gen": {
+      "kind": "mixed"
+     },
+     "drills": [
+      {
+       "title": "Mixed set",
+       "do": "Solve today's set, naming the trick first.",
+       "drill": 1
+      },
+      {
+       "title": "Estimate first",
+       "do": "Before solving each problem, say a rough answer. Then solve and compare.",
+       "drill": 2
+      },
+      {
+       "title": "Speed round",
+       "do": "Solve today's set as fast as you can.",
+       "drill": 3
+      },
+      {
+       "title": "Out loud",
+       "do": "Explain each step aloud.",
+       "drill": 4
+      },
+      {
+       "title": "Everyday math",
+       "do": "Solve today's set, then work out a real tip or a split bill in your head.",
+       "drill": 5
+      },
+      {
+       "title": "Personal best",
+       "do": "Solve today's set and try to beat your best time.",
+       "drill": 6
+      }
+     ],
+     "easier": "Take as long as you need; accuracy only.",
+     "harder": "Give yourself 2 minutes for the whole set.",
+     "check": {
+      "task": "Solve the 10-problem check set.",
+      "record": "score and time",
+      "ready_if": "9 out of 10 or better."
+     },
+     "stage": 6,
+     "level": "Building"
+    }
+   ],
+   "source": "omega"
+  },
+  {
+   "id": "knots",
+   "name": "Knots",
+   "emoji": "🪢",
+   "blurb": "Tie a set of useful knots, hitches and bends, then tie them without looking.",
+   "need": "Two pieces of soft rope or cord about an arm's length each, ideally of different thicknesses, and a broom handle or chair leg for hitches.",
+   "safety": "These sessions are for learning to tie knots. Never trust a knot from this plan to hold a person, a climber, a boat in bad weather or anything that could fall on someone. For those, learn from a qualified instructor.",
+   "generator": null,
+   "measure": {
+    "name": "Knots you can tie without looking",
+    "unit": "knots"
+   },
+   "warmups": [
+    "Tie and untie an overhand knot 5 times with each hand leading.",
+    "Tie the last knot you learned 3 times, then once with your eyes closed.",
+    "Name the parts of the rope: the working end (the end you tie with), the standing part (the rest) and a bight (a U-shaped fold).",
+    "Tie each knot from your last session once, slowly."
+   ],
+   "wrapup": "Tell me which knots you can now tie without looking.",
+   "resources": [
+    {
+     "label": "Knots, Splices and Rope Work (full book, free)",
+     "url": "https://www.gutenberg.org/ebooks/13510"
+    }
+   ],
+   "stages": [
+    {
+     "title": "Stoppers and the square knot",
+     "goal": "Tie the overhand, figure-eight, slip knot and square knot.",
+     "drills": [
+      {
+       "title": "Overhand knot",
+       "do": "Make a loop and pass the working end through it. It is the simplest knot and the start of many others.",
+       "link": "https://en.wikipedia.org/wiki/Overhand_knot",
+       "drill": 1
+      },
+      {
+       "title": "Figure-eight knot",
+       "do": "Make a loop, take the end around behind the standing part, then down through the loop. It stops a rope sliding through a hole and is easier to untie than an overhand.",
+       "link": "https://en.wikipedia.org/wiki/Figure-eight_knot",
+       "drill": 2
+      },
+      {
+       "title": "Slip knot",
+       "do": "Tie an overhand knot around a bight of the rope instead of the end, so that pulling the end releases it.",
+       "link": "https://en.wikipedia.org/wiki/Slip_knot",
+       "drill": 3
+      },
+      {
+       "title": "Square knot",
+       "do": "Right over left and under, then left over right and under. It ties the two ends of one cord around something, like a parcel or a bandage. Never use it to join two ropes that will take a load: it can slip or spill.",
+       "link": "https://en.wikipedia.org/wiki/Reef_knot",
+       "drill": 4
+      },
+      {
+       "title": "Granny check",
+       "do": "Tie a granny knot (right over left twice) next to a square knot. Learn to see the difference.",
+       "drill": 5
+      },
+      {
+       "title": "Review",
+       "do": "Tie all four knots three times each, then each once without looking.",
+       "drill": 6
+      }
+     ],
+     "easier": "Learn two knots this week.",
+     "harder": "Tie each knot behind your back.",
+     "check": {
+      "task": "Tie the four knots without looking.",
+      "record": "how many you tied correctly",
+      "ready_if": "All four."
+     },
+     "stage": 1,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Bends and the bowline",
+     "goal": "Join two ropes and tie a fixed loop.",
+     "drills": [
+      {
+       "title": "Sheet bend",
+       "do": "Make a bight in the thicker rope. Pass the thinner end up through it, around behind both legs of the bight, and tuck it under itself.",
+       "link": "https://en.wikipedia.org/wiki/Sheet_bend",
+       "drill": 1
+      },
+      {
+       "title": "Double sheet bend",
+       "do": "Tie a sheet bend, but take the end around behind the bight a second time before the tuck.",
+       "drill": 2
+      },
+      {
+       "title": "Bowline",
+       "do": "Make a small loop in the standing part. Bring the end up through it, around behind the standing part, and back down through the small loop. Tighten.",
+       "link": "https://en.wikipedia.org/wiki/Bowline",
+       "drill": 3
+      },
+      {
+       "title": "Bowline around a post",
+       "do": "Tie a bowline around a chair leg, as you would around a post.",
+       "drill": 4
+      },
+      {
+       "title": "Check your bowline",
+       "do": "Look at it: the end should finish inside the loop. Tie it 5 times.",
+       "drill": 5
+      },
+      {
+       "title": "Review",
+       "do": "Tie the sheet bend and bowline three times each, then once without looking.",
+       "drill": 6
+      }
+     ],
+     "easier": "Focus on the bowline only.",
+     "harder": "Tie the bowline with your eyes closed.",
+     "check": {
+      "task": "Tie a sheet bend and a bowline without looking.",
+      "record": "how many you tied correctly",
+      "ready_if": "Both."
+     },
+     "stage": 2,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Hitches",
+     "goal": "Tie a rope to a post or ring.",
+     "drills": [
+      {
+       "title": "Clove hitch",
+       "do": "Wrap the rope around a post, cross over the first turn, wrap again and tuck the end under the second turn.",
+       "link": "https://en.wikipedia.org/wiki/Clove_hitch",
+       "drill": 1
+      },
+      {
+       "title": "Round turn and two half hitches",
+       "do": "Take two turns around a post, then tie two half hitches around the standing part.",
+       "link": "https://en.wikipedia.org/wiki/Round_turn_and_two_half-hitches",
+       "drill": 2
+      },
+      {
+       "title": "Timber hitch",
+       "do": "Pass the rope around a pole, around the standing part, then twist the end back around itself three times.",
+       "link": "https://en.wikipedia.org/wiki/Timber_hitch",
+       "drill": 3
+      },
+      {
+       "title": "Clove hitch over a post",
+       "do": "Tie the clove hitch by making two loops in your hands and dropping them over the end of a post.",
+       "drill": 4
+      },
+      {
+       "title": "Which hitch?",
+       "do": "For three jobs (a leash to a post, a pole to drag, a clothesline) pick a hitch and tie it.",
+       "drill": 5
+      },
+      {
+       "title": "Review",
+       "do": "Tie all three hitches three times each, then once without looking.",
+       "drill": 6
+      }
+     ],
+     "easier": "Learn the clove hitch and the round turn only.",
+     "harder": "Tie each hitch in under 10 seconds.",
+     "check": {
+      "task": "Tie the three hitches without looking.",
+      "record": "how many you tied correctly",
+      "ready_if": "All three."
+     },
+     "stage": 3,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Adjustable and tensioning knots",
+     "goal": "Tighten a line and tie off to a cleat.",
+     "drills": [
+      {
+       "title": "Taut-line hitch",
+       "do": "Pass the rope around a post. Take two turns around the standing part inside the loop, then one more turn further along the standing part, and tuck. It slides to adjust and grips under load.",
+       "link": "https://en.wikipedia.org/wiki/Taut-line_hitch",
+       "drill": 1
+      },
+      {
+       "title": "Trucker's hitch",
+       "do": "Follow the diagram: make a loop in the standing part, pass the end around an anchor and back through the loop, pull tight and finish with two half hitches.",
+       "link": "https://en.wikipedia.org/wiki/Trucker%27s_hitch",
+       "drill": 2
+      },
+      {
+       "title": "Cleat hitch",
+       "do": "Follow the diagram: a turn around the base of the cleat, a figure-eight over its horns, and a locking turn.",
+       "link": "https://en.wikipedia.org/wiki/Cleat_hitch",
+       "drill": 3
+      },
+      {
+       "title": "Practice line",
+       "do": "Run a line between two chairs with a taut-line hitch. Slide it tighter and looser.",
+       "drill": 4
+      },
+      {
+       "title": "Speed",
+       "do": "Time yourself tying each knot from this week.",
+       "drill": 5
+      },
+      {
+       "title": "Review",
+       "do": "Tie every knot from this week three times, then once without looking.",
+       "drill": 6
+      }
+     ],
+     "easier": "Learn the taut-line hitch only.",
+     "harder": "Tie the trucker's hitch with your eyes closed.",
+     "check": {
+      "task": "Tie the three knots without looking.",
+      "record": "how many you tied correctly",
+      "ready_if": "All three."
+     },
+     "stage": 4,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Grip knots and loops",
+     "goal": "Tie the constrictor, double fisherman's and alpine butterfly.",
+     "drills": [
+      {
+       "title": "Constrictor knot",
+       "do": "Tie it like a clove hitch, then tuck the end under the crossing so it grips hard. Good for closing a bag.",
+       "link": "https://en.wikipedia.org/wiki/Constrictor_knot",
+       "drill": 1
+      },
+      {
+       "title": "Double fisherman's",
+       "do": "Lay two ends side by side. Each end ties a double overhand knot around the other rope. Pull the two knots together.",
+       "link": "https://en.wikipedia.org/wiki/Double_fisherman%27s_knot",
+       "drill": 2
+      },
+      {
+       "title": "Alpine butterfly",
+       "do": "Follow the diagram step by step to make a loop in the middle of a rope.",
+       "link": "https://en.wikipedia.org/wiki/Alpine_butterfly_knot",
+       "drill": 3
+      },
+      {
+       "title": "Compare loops",
+       "do": "Tie a bowline and an alpine butterfly. Say when you would pick each.",
+       "drill": 4
+      },
+      {
+       "title": "Speed",
+       "do": "Time yourself tying each knot from this week.",
+       "drill": 5
+      },
+      {
+       "title": "Review",
+       "do": "Tie every knot from this week three times, then once without looking.",
+       "drill": 6
+      }
+     ],
+     "easier": "Learn the constrictor and the double fisherman's only.",
+     "harder": "Tie each knot in under 15 seconds.",
+     "check": {
+      "task": "Tie the three knots without looking.",
+      "record": "how many you tied correctly",
+      "ready_if": "All three."
+     },
+     "stage": 5,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Mastery",
+     "goal": "Tie every knot from memory and pick the right one for the job.",
+     "drills": [
+      {
+       "title": "Prusik",
+       "do": "Follow the diagram to tie a loop of thin cord around a thicker rope so it grips. Slide it, then pull on it.",
+       "link": "https://en.wikipedia.org/wiki/Prusik",
+       "drill": 1
+      },
+      {
+       "title": "Eyes closed round",
+       "do": "Tie every knot from the plan with your eyes closed.",
+       "drill": 2
+      },
+      {
+       "title": "Job match",
+       "do": "For 6 everyday jobs (a parcel, a hammock, a tarp, a tow line, a boat to a dock, a bag) pick a knot and tie it.",
+       "drill": 3
+      },
+      {
+       "title": "Speed round",
+       "do": "Tie all your knots as fast as you can. Note your total time.",
+       "drill": 4
+      },
+      {
+       "title": "Untie test",
+       "do": "Pull each knot hard, then untie it. Note which ones jam.",
+       "drill": 5
+      },
+      {
+       "title": "Teach it",
+       "do": "Teach one knot to someone, or explain it out loud step by step.",
+       "drill": 6
+      }
+     ],
+     "easier": "Focus on your five favorite knots.",
+     "harder": "Tie every knot you can with one hand.",
+     "check": {
+      "task": "Tie every knot from the plan without looking.",
+      "record": "how many you tied correctly",
+      "ready_if": "All of them, or all but one."
+     },
+     "stage": 6,
+     "level": "Building",
+     "gen": {}
+    }
+   ],
+   "source": "omega"
+  },
+  {
+   "id": "juggling",
+   "name": "Juggling",
+   "emoji": "🤹",
+   "blurb": "Go from one ball to a steady three-ball cascade, then a few tricks.",
+   "need": "Three soft balls of the same size: beanbags, tennis balls or rolled-up socks.",
+   "safety": "Clear the space around you, away from anything breakable. Standing in front of a bed saves a lot of bending down.",
+   "generator": null,
+   "measure": {
+    "name": "Best run of catches",
+    "unit": "catches"
+   },
+   "warmups": [
+    "Roll your shoulders and wrists for 30 seconds.",
+    "Toss one ball from hand to hand 20 times in an arc that peaks just above eye level.",
+    "Toss one ball 10 times with each hand, catching in the same hand.",
+    "Stand tall, elbows at your sides, forearms forward. That is your home position."
+   ],
+   "wrapup": "Tell me your best run today.",
+   "resources": [
+    {
+     "label": "The three-ball cascade",
+     "url": "https://en.wikipedia.org/wiki/Cascade_%28juggling%29"
+    },
+    {
+     "label": "Juggling patterns",
+     "url": "https://en.wikipedia.org/wiki/Juggling_pattern"
+    }
+   ],
+   "stages": [
+    {
+     "title": "One ball",
+     "goal": "A steady, even throw from hand to hand.",
+     "drills": [
+      {
+       "title": "The arc",
+       "do": "Toss one ball from hand to hand in an arc that peaks just above eye level. 50 throws.",
+       "drill": 1
+      },
+      {
+       "title": "Scooping throw",
+       "do": "Throw from near the middle of your body and catch out to the side. 50 throws.",
+       "drill": 2
+      },
+      {
+       "title": "Eyes at the peak",
+       "do": "Watch the top of the arc, not your hands. 50 throws.",
+       "drill": 3
+      },
+      {
+       "title": "Rhythm",
+       "do": "Say 'throw' at each throw and keep the beat steady. 50 throws.",
+       "drill": 4
+      },
+      {
+       "title": "Weak hand",
+       "do": "Give your weaker hand extra throws until both arcs match.",
+       "drill": 5
+      },
+      {
+       "title": "Eyes on the wall",
+       "do": "50 throws with your eyes fixed on a point on the wall.",
+       "drill": 6
+      }
+     ],
+     "easier": "Make the arc lower.",
+     "harder": "Toss from behind your back to the other hand.",
+     "check": {
+      "task": "Do 30 hand-to-hand throws in a row.",
+      "record": "throws in a row",
+      "ready_if": "30 in a row with even arcs."
+     },
+     "stage": 1,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "Two balls",
+     "goal": "The exchange: throw the second ball when the first one peaks.",
+     "drills": [
+      {
+       "title": "The exchange",
+       "do": "One ball in each hand. Throw the right one; when it peaks, throw the left one under it. Catch both. Stop. Repeat 30 times.",
+       "drill": 1
+      },
+      {
+       "title": "Other hand first",
+       "do": "The same exchange, starting with the left hand.",
+       "drill": 2
+      },
+      {
+       "title": "Say it",
+       "do": "Say 'throw, throw, catch, catch' while you do exchanges.",
+       "drill": 3
+      },
+      {
+       "title": "Even heights",
+       "do": "Check that both throws peak at the same height.",
+       "drill": 4
+      },
+      {
+       "title": "Two in one hand",
+       "do": "Hold two balls in one hand and juggle them in that hand only, in small circles.",
+       "drill": 5
+      },
+      {
+       "title": "Review",
+       "do": "20 exchanges starting with each hand.",
+       "drill": 6
+      }
+     ],
+     "easier": "Pause longer between exchanges.",
+     "harder": "Do exchanges back to back without stopping.",
+     "check": {
+      "task": "Do 10 clean exchanges starting with each hand.",
+      "record": "clean exchanges",
+      "ready_if": "10 with each hand."
+     },
+     "stage": 2,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "The three-ball flash",
+     "goal": "Throw all three balls once and catch them all.",
+     "drills": [
+      {
+       "title": "Setup",
+       "do": "Two balls in your stronger hand, one in the other. Practice the first throw from the hand holding two.",
+       "drill": 1
+      },
+      {
+       "title": "The flash",
+       "do": "Throw, throw, throw (strong, weak, strong), each when the last one peaks. Catch all three. Stop.",
+       "drill": 2
+      },
+      {
+       "title": "Let them drop",
+       "do": "Do the flash and let the balls drop, just to feel the rhythm of the throws.",
+       "drill": 3
+      },
+      {
+       "title": "Flash and catch",
+       "do": "Do 20 flashes, catching all three.",
+       "drill": 4
+      },
+      {
+       "title": "Other hand first",
+       "do": "Do flashes starting with your weaker hand.",
+       "drill": 5
+      },
+      {
+       "title": "Review",
+       "do": "Do 10 flashes starting with each hand.",
+       "drill": 6
+      }
+     ],
+     "easier": "Go back to the two-ball exchange for half the session.",
+     "harder": "Add a fourth throw after the flash.",
+     "check": {
+      "task": "Do 5 clean flashes in a row.",
+      "record": "clean flashes",
+      "ready_if": "5 in a row."
+     },
+     "stage": 3,
+     "level": "Foundations",
+     "gen": {}
+    },
+    {
+     "title": "The cascade",
+     "goal": "Keep three balls going.",
+     "drills": [
+      {
+       "title": "Four throws",
+       "do": "Do a flash and add one more throw. Then try five throws.",
+       "drill": 1
+      },
+      {
+       "title": "Count catches",
+       "do": "Juggle and count catches out loud. Stop before you lose control.",
+       "drill": 2
+      },
+      {
+       "title": "Stay in place",
+       "do": "If you keep walking forward to chase throws, stand facing a wall or a bed.",
+       "drill": 3
+      },
+      {
+       "title": "Steady height",
+       "do": "Keep every throw at the same height, just above eye level.",
+       "drill": 4
+      },
+      {
+       "title": "Relax",
+       "do": "Drop your shoulders and slow down. Slightly higher throws give you more time.",
+       "drill": 5
+      },
+      {
+       "title": "Best run",
+       "do": "Try for your best run of catches.",
+       "drill": 6
+      }
+     ],
+     "easier": "Go back to the flash for half the session.",
+     "harder": "Juggle 10, catch them all, and start again without dropping.",
+     "check": {
+      "task": "Juggle your best run.",
+      "record": "catches in a row",
+      "ready_if": "20 catches in a row."
+     },
+     "stage": 4,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "Longer runs and control",
+     "goal": "Stop on purpose, recover and juggle for a minute.",
+     "drills": [
+      {
+       "title": "Planned stop",
+       "do": "Juggle and stop cleanly on a count you choose.",
+       "drill": 1
+      },
+      {
+       "title": "Throw height",
+       "do": "Juggle low for 10 catches, high for 10, then back to normal.",
+       "drill": 2
+      },
+      {
+       "title": "Recover",
+       "do": "When a throw goes wild, try to save it rather than stop.",
+       "drill": 3
+      },
+      {
+       "title": "Time it",
+       "do": "Juggle for 30 seconds without a drop.",
+       "drill": 4
+      },
+      {
+       "title": "Walk and juggle",
+       "do": "Take slow steps forward and back while juggling.",
+       "drill": 5
+      },
+      {
+       "title": "Best run",
+       "do": "Try for your best run.",
+       "drill": 6
+      }
+     ],
+     "easier": "Aim for 10 catches with full control.",
+     "harder": "Juggle for a full minute.",
+     "check": {
+      "task": "Juggle your best run.",
+      "record": "catches in a row",
+      "ready_if": "50 catches in a row."
+     },
+     "stage": 5,
+     "level": "Building",
+     "gen": {}
+    },
+    {
+     "title": "First tricks",
+     "goal": "Over the top, the reverse cascade and columns.",
+     "drills": [
+      {
+       "title": "Over the top",
+       "do": "In the cascade, throw one ball over the top of the pattern instead of inside it, then carry on.",
+       "drill": 1
+      },
+      {
+       "title": "Reverse cascade",
+       "do": "Throw every ball from the outside of the pattern, over the top.",
+       "link": "https://en.wikipedia.org/wiki/Juggling_pattern",
+       "drill": 2
+      },
+      {
+       "title": "Columns",
+       "do": "Throw balls straight up in columns: one on each side together, then the middle one.",
+       "drill": 3
+      },
+      {
+       "title": "Under the leg",
+       "do": "Throw one ball from under your leg, then go back to the cascade.",
+       "drill": 4
+      },
+      {
+       "title": "Mix",
+       "do": "Cascade, one trick, cascade. Try each trick in turn.",
+       "drill": 5
+      },
+      {
+       "title": "Show it",
+       "do": "Put together a 30-second routine of your tricks.",
+       "drill": 6
+      }
+     ],
+     "easier": "Learn one trick this week.",
+     "harder": "Chain two tricks without stopping.",
+     "check": {
+      "task": "Do one trick in the middle of a cascade and keep going.",
+      "record": "tricks landed",
+      "ready_if": "One trick landed cleanly."
+     },
+     "stage": 6,
+     "level": "Building",
+     "gen": {}
+    }
+   ],
+   "source": "omega"
+  }
+ ],
+ "speaking_topics": [
+  "a meal you remember",
+  "the best advice you've been given",
+  "a place you'd like to visit",
+  "a skill you'd like to learn",
+  "how to make a good cup of tea or coffee",
+  "a small change that made your week better",
+  "why everyone should learn to cook",
+  "a book or film you'd recommend",
+  "your favorite season and why",
+  "how to plan a weekend trip",
+  "a job you'd love to try for a day",
+  "the case for walking more",
+  "something you changed your mind about",
+  "how to keep a houseplant alive",
+  "a tradition you enjoy",
+  "the best way to start a morning",
+  "why libraries matter",
+  "a hobby you'd teach a friend",
+  "how to welcome a new neighbor",
+  "the most useful thing you own",
+  "a time you learned from a mistake",
+  "how to save money on groceries",
+  "a great teacher you had",
+  "why naps are underrated",
+  "how to pack light",
+  "a perfect lazy Sunday",
+  "the case for handwritten notes",
+  "a local spot you love",
+  "how to make a new habit stick",
+  "what makes a good friend",
+  "the best gift you've given",
+  "how to explain email to someone from 1900",
+  "a sport worth watching",
+  "why everyone should learn to swim",
+  "a song that cheers you up",
+  "how to have a good conversation",
+  "your ideal small house",
+  "a time you were brave",
+  "how to choose a good book",
+  "the best thing about where you live"
+ ]
+}
