@@ -322,5 +322,42 @@ class Naming(unittest.TestCase):
                     self.assertNotIn(old, low, f)
 
 
+class LiveTestFixes(unittest.TestCase):
+    def test_one_day_lookup_checks_same_stage_as_projection(self):
+        proj = L.schedule('weekdays', dt.date(2026, 11, 2), 1, 1, 14)
+        fri = [x for x in proj if x['date'] == '2026-11-13'][0]
+        one = L.schedule('weekdays', dt.date(2026, 11, 13), 2, 3, 1, done_since_check=4)[0]
+        self.assertEqual((fri['kind'], fri['stage']), ('check', 1))
+        self.assertEqual((one['kind'], one['stage']), ('check', 1))
+
+    def test_start_mid_plan_checks_own_stage(self):
+        out = L.schedule('mwf', dt.date(2026, 11, 4), 3, 1, 3)
+        self.assertEqual(out[-1], {'date': '2026-11-06', 'kind': 'check', 'stage': 3})
+
+    def test_easy_never_moves_back(self):
+        self.assertEqual(L.after_check(1, 2, 3, 'easy'), {'stage': 2, 'drill': 3, 'tweak': 'harder'})
+        self.assertEqual(L.after_check(1, 1, 5, 'easy'), {'stage': 2, 'drill': 1, 'tweak': 'harder'})
+
+    def test_grading_reads_natural_replies(self):
+        exp = [53, 60, 52, 79, 112, 77, 33, 105]
+        for reply in ('53, 60, 52, 79, 112, 77, 33, 105 (about 4 min)',
+                      '53 60 52 79 112 77 33 105, 4 minutes',
+                      '1. 53\n2. 60\n3. 52\n4. 79\n5. 112\n6. 77\n7. 33\n8. 105',
+                      '53, 60, 52, 79, 112, 77, 33, 105. Took me about 4 minutes',
+                      '53,60,52,79,112,77,33,105'):
+            self.assertEqual(L.grade_answers(exp, reply)['score'], 8, reply)
+        self.assertEqual(L.grade_answers([2400, 420], '2,400, 420')['score'], 2)
+        self.assertEqual(L.grade_answers(['Water bottle', 2, 13517.75], 'Water bottle; 2; 13517.75 (took 6 minutes)')['score'], 3)
+
+    def test_validator_keeps_parentheses_in_links(self):
+        plan = {'resources': [{'url': 'https://en.wikipedia.org/wiki/Grade_(climbing)'}],
+                'stages': [{'drills': [{'do': 'See it (https://en.wikipedia.org/wiki/Bouldering).'}]}]}
+        found = re.findall(r'https?://(?:[^\s"()]|\([^\s"()]*\))+', json.dumps(plan))
+        self.assertIn('https://en.wikipedia.org/wiki/Grade_(climbing)', found)
+        self.assertIn('https://en.wikipedia.org/wiki/Bouldering', found)
+        res = L.validate(plan)
+        self.assertNotIn('link is not https: https://en.wikipedia.org/wiki/Grade_(climbing', ' '.join(res['errors']))
+
+
 if __name__ == '__main__':
     unittest.main(verbosity=1)

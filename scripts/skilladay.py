@@ -67,7 +67,7 @@ def schedule(pace, start, stage, drill, days, paused=(), done_since_check=0, che
     practice = PACES[pace]
     cday = CHECK_DAY[pace] if check_day is None else check_day
     out = []
-    last_stage, last_drill, first_stage = stage, drill - 1, stage
+    last_stage, last_drill = stage, drill - 1
     d = start
     for _ in range(days):
         iso = d.isoformat()
@@ -77,7 +77,9 @@ def schedule(pace, start, stage, drill, days, paused=(), done_since_check=0, che
             out.append({'date': iso, 'kind': 'paused'})
         elif d.weekday() == cday and done_since_check > 0:
             # Check the stage just finished if the new one has barely started.
-            checked = last_stage - 1 if (last_drill < 3 and last_stage - 1 >= first_stage) else last_stage
+            # Drills from the previous stage were done since the last check when done_since_check
+            # is more than the drills done in this stage, so a one-day lookup agrees with a projection.
+            checked = last_stage - 1 if (last_drill < 3 and last_stage > 1 and done_since_check > last_drill) else last_stage
             out.append({'date': iso, 'kind': 'check', 'stage': checked})
             done_since_check = 0
         else:
@@ -96,7 +98,9 @@ def after_check(checked_stage, stage, drill, result):
     result 'hard': restart the checked stage at drill 1, with the easier tweak on next week.
     result 'right': carry on, no tweak."""
     if result == 'easy':
-        return {'stage': checked_stage + 1, 'drill': 1, 'tweak': 'harder'}
+        # Move up, but never back to drills already done in a stage the owner has started.
+        nxt = max((checked_stage + 1, 1), (stage, drill))
+        return {'stage': nxt[0], 'drill': nxt[1], 'tweak': 'harder'}
     if result == 'hard':
         return {'stage': checked_stage, 'drill': 1, 'tweak': 'easier'}
     return {'stage': stage, 'drill': drill, 'tweak': None}
@@ -365,8 +369,23 @@ def _num(s):
         return s.lower()
 
 
+NUM_RE = r'-?\$?\d{1,3}(?:,\d{3})+(?:\.\d+)?|-?\$?\d+(?:\.\d+)?'
+
+
+def _first_num(p):
+    m = re.search(NUM_RE, p)
+    return m.group(0) if m else p
+
+
 def grade_answers(expected, given):
     s = given.strip()
+    if len(expected) > 1 and all(not isinstance(e, str) for e in expected):
+        # All-number answers: read the numbers in order, ignoring list numbers ("1. 53")
+        # and any words after them such as "took about 4 minutes".
+        t = re.sub(r'(^|\n|[,;]\s*)\s*\d{1,2}[.)]\s+(?=-?\$?\d)', r'\1', s)
+        nums = re.findall(NUM_RE, t)
+        if len(nums) >= len(expected):
+            s = ', '.join(nums[:len(expected)])
     if len(expected) == 1:
         parts = [s]
     else:
@@ -383,6 +402,8 @@ def grade_answers(expected, given):
             ok = g.lower() in [x.lower() for x in e.split(' or ')]
         else:
             gv = _num(g)
+            if not isinstance(gv, float):
+                gv = _num(_first_num(g))
             ok = isinstance(gv, float) and abs(gv - float(e)) < 0.006
         res.append({'n': i + 1, 'given': g, 'expected': e, 'ok': ok})
     return {'score': sum(r['ok'] for r in res), 'out_of': len(expected), 'items': res}
@@ -438,7 +459,8 @@ def validate(plan, live=False):
             errs.append(f'risky skill ({why}): safety note must say "{INSTRUCTOR_NOTE}"')
         if plan.get('scope') != SAFE_SCOPE:
             errs.append(f'risky skill ({why}): scope must be "{SAFE_SCOPE}" (plan the safe parts only)')
-    urls = sorted(set(re.findall(r'https?://[^\s"\)]+', blob)))
+    # Allow balanced parentheses inside a link (encyclopedia pages like Grade_(climbing)).
+    urls = sorted(set(re.findall(r'https?://(?:[^\s"()]|\([^\s"()]*\))+', blob)))
     for u in urls:
         if not u.startswith('https://'):
             errs.append(f'link is not https: {u}')
