@@ -144,6 +144,55 @@ class Schedule(unittest.TestCase):
         self.assertEqual(L.after_check(2, 2, 4, 'hard'), {'stage': 2, 'drill': 1, 'tweak': 'easier'})
         self.assertEqual(L.after_check(2, 2, 4, 'right'), {'stage': 2, 'drill': 4, 'tweak': None})
 
+    def test_start_days_before_are_off(self):
+        rows = L.schedule('daily', d('2026-11-10'), 1, 1, 14, not_before=d('2026-11-16'))
+        before = [r for r in rows if r['date'] < '2026-11-16']
+        self.assertEqual([r['date'] for r in before],
+                         ['2026-11-10', '2026-11-11', '2026-11-12', '2026-11-13', '2026-11-14', '2026-11-15'])
+        self.assertTrue(all(r['kind'] == 'off' for r in before))
+        self.assertTrue(all(set(r) == {'date', 'kind'} for r in before))
+
+    def test_start_first_session_on_or_after_start(self):
+        rows = L.schedule('daily', d('2026-11-10'), 1, 1, 14, not_before=d('2026-11-16'))
+        on = [r for r in rows if r['kind'] != 'off']
+        self.assertEqual(on[0], {'date': '2026-11-16', 'kind': 'drill', 'stage': 1, 'drill': 1})
+
+        # Start date is a Saturday; first weekday session is Monday.
+        rows = L.schedule('weekdays', d('2026-11-10'), 1, 1, 14, not_before=d('2026-11-14'))
+        on = [r for r in rows if r['kind'] != 'off']
+        self.assertEqual(on[0], {'date': '2026-11-16', 'kind': 'drill', 'stage': 1, 'drill': 1})
+
+        # Start date is a Tuesday; first M/W/F session is Wednesday.
+        rows = L.schedule('mwf', d('2026-11-09'), 1, 1, 14, not_before=d('2026-11-10'))
+        on = [r for r in rows if r['kind'] != 'off']
+        self.assertEqual(on[0], {'date': '2026-11-11', 'kind': 'drill', 'stage': 1, 'drill': 1})
+
+    def test_start_does_not_consume_plan_days(self):
+        rows = L.schedule('daily', d('2026-11-10'), 1, 1, 14, not_before=d('2026-11-16'))
+        drills = [r for r in rows if r['kind'] == 'drill']
+        self.assertEqual([(r['stage'], r['drill']) for r in drills[:6]],
+                         [(1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6)])
+        checks = [r for r in rows if r['kind'] == 'check']
+        self.assertEqual(checks[0], {'date': '2026-11-22', 'kind': 'check', 'stage': 1})
+
+        # Mid-plan position is also held until the start date.
+        rows = L.schedule('weekdays', d('2026-11-10'), 2, 4, 10, not_before=d('2026-11-16'))
+        on = [r for r in rows if r['kind'] != 'off']
+        self.assertEqual(on[0], {'date': '2026-11-16', 'kind': 'drill', 'stage': 2, 'drill': 4})
+
+    def test_start_cli_flag(self):
+        import subprocess
+        out = subprocess.check_output([
+            sys.executable, str(ROOT / 'scripts' / 'skilladay.py'),
+            'schedule', '--skill', 'typing', '--pace', 'daily',
+            '--from', '2026-11-10', '--start', '2026-11-16',
+            '--stage', '1', '--drill', '1', '--days', '8',
+        ], text=True)
+        rows = json.loads(out)
+        self.assertTrue(all(r['kind'] == 'off' for r in rows if r['date'] < '2026-11-16'))
+        first = [r for r in rows if r['kind'] != 'off'][0]
+        self.assertEqual(first, {'date': '2026-11-16', 'kind': 'drill', 'stage': 1, 'drill': 1})
+
 
 class Sessions(unittest.TestCase):
     def test_every_session_renders(self):

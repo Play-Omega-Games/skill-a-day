@@ -2,7 +2,7 @@
 Standard library only. Run from anywhere; data paths are relative to the repo root.
 
     python3 scripts/skilladay.py menu
-    python3 scripts/skilladay.py schedule --skill typing --pace daily --from 2026-11-10 --stage 1 --drill 1 --days 14
+    python3 scripts/skilladay.py schedule --skill typing --pace daily --from 2026-11-10 --start 2026-11-16 --stage 1 --drill 1 --days 14
     python3 scripts/skilladay.py session --skill typing --date 2026-11-10 --kind drill --stage 1 --drill 1 --salt abc
     python3 scripts/skilladay.py grade-typing --target-file t.txt --typed-file y.txt --seconds 60
     python3 scripts/skilladay.py grade --skill mentalmath --date 2026-11-10 --kind drill --stage 1 --salt abc --answers "85, 61"
@@ -62,8 +62,9 @@ def advance(stage, drill):
 
 
 # ------------------------------------------------------------------ schedule
-def schedule(pace, start, stage, drill, days, paused=(), done_since_check=0, check_day=None):
-    """Dated sessions from `start`, assuming each weekly check is answered 'About right'."""
+def schedule(pace, start, stage, drill, days, paused=(), done_since_check=0, check_day=None, not_before=None):
+    """Dated sessions from `start`, assuming each weekly check is answered 'About right'.
+    Days before `not_before` (the owner's start date, from --start) are off and do not advance the plan."""
     practice = PACES[pace]
     cday = CHECK_DAY[pace] if check_day is None else check_day
     out = []
@@ -71,7 +72,9 @@ def schedule(pace, start, stage, drill, days, paused=(), done_since_check=0, che
     d = start
     for _ in range(days):
         iso = d.isoformat()
-        if d.weekday() not in practice:
+        if not_before is not None and d < not_before:
+            out.append({'date': iso, 'kind': 'off'})
+        elif d.weekday() not in practice:
             out.append({'date': iso, 'kind': 'off'})
         elif iso in paused:
             out.append({'date': iso, 'kind': 'paused'})
@@ -488,6 +491,7 @@ def main(argv=None):
     s.add_argument('--from', dest='start', required=True); s.add_argument('--stage', type=int, default=1)
     s.add_argument('--drill', type=int, default=1); s.add_argument('--days', type=int, default=14)
     s.add_argument('--paused', default=''); s.add_argument('--done-since-check', type=int, default=0)
+    s.add_argument('--start', dest='owner_start', default='', help="owner's start date; days before this are off")
     se = sub.add_parser('session')
     for a in ('--skill', '--date', '--kind', '--salt'):
         se.add_argument(a, required=True)
@@ -513,7 +517,8 @@ def main(argv=None):
             print(f"{sk['id']}\t{sk['emoji']} {sk['name']}\t{sk['blurb']}")
     elif a.cmd == 'schedule':
         rows = schedule(a.pace, dt.date.fromisoformat(a.start), a.stage, a.drill, a.days,
-                        set(x for x in a.paused.split(',') if x), a.done_since_check)
+                        set(x for x in a.paused.split(',') if x), a.done_since_check,
+                        not_before=dt.date.fromisoformat(a.owner_start) if a.owner_start else None)
         print(json.dumps(rows, indent=1))
     elif a.cmd == 'session':
         sk = get_skill(a.skill, a.custom)
